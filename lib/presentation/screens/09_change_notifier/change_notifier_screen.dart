@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-
 class ChangeNotifierScreen extends StatelessWidget {
+  static const routeName = '/change-notifier-provider';
   const ChangeNotifierScreen({super.key});
 
   @override

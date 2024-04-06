@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-
 class StreamProviderScreen extends StatelessWidget {
+  static const routeName = '/stream-provider';
   const StreamProviderScreen({super.key});
 
   @override

@@ -4,6 +4,7 @@ import 'package:riverpod_app/config/config.dart';
 import 'package:riverpod_app/presentation/providers/providers.dart';
 
 class StateProviderScreen extends ConsumerWidget {
+  static const routeName = '/state-provider';
   const StateProviderScreen({super.key});
 
   @override

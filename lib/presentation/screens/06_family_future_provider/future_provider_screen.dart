@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-
 class FamilyFutureScreen extends StatelessWidget {
+  static const routeName = '/future-family-provider';
   const FamilyFutureScreen({super.key});
 
   @override
@@ -14,8 +14,8 @@ class FamilyFutureScreen extends StatelessWidget {
         child: Text('Fernando Herrera'),
       ),
       floatingActionButton: FloatingActionButton(
-        child: const Icon( Icons.refresh ),
-        onPressed: () {  },
+        child: const Icon(Icons.refresh),
+        onPressed: () {},
       ),
     );
   }

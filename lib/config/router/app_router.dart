@@ -12,39 +12,39 @@ GoRouter appRouter(AppRouterRef ref) {
       builder: (context, state) => const HomeScreen(),
     ),
     GoRoute(
-      path: '/provider',
+      path: ProviderScreen.routeName,
       builder: (context, state) => const ProviderScreen(),
     ),
     GoRoute(
-      path: '/provider-router',
+      path: RouterScreen.routeName,
       builder: (context, state) => const RouterScreen(),
     ),
     GoRoute(
-      path: '/state-provider',
+      path: StateProviderScreen.routeName,
       builder: (context, state) => const StateProviderScreen(),
     ),
     GoRoute(
-      path: '/todo',
+      path: TodoScreen.routeName,
       builder: (context, state) => const TodoScreen(),
     ),
     GoRoute(
-      path: '/future-provider',
+      path: FutureProviderScreen.routeName,
       builder: (context, state) => const FutureProviderScreen(),
     ),
     GoRoute(
-      path: '/future-family-provider',
+      path: FamilyFutureScreen.routeName,
       builder: (context, state) => const FamilyFutureScreen(),
     ),
     GoRoute(
-      path: '/stream-provider',
+      path: StreamProviderScreen.routeName,
       builder: (context, state) => const StreamProviderScreen(),
     ),
     GoRoute(
-      path: '/change-notifier-provider',
+      path: ChangeNotifierScreen.routeName,
       builder: (context, state) => const ChangeNotifierScreen(),
     ),
     GoRoute(
-      path: '/state-notifier-provider',
+      path: StateNotifierScreen.routeName,
       builder: (context, state) => const StateNotifierScreen(),
     ),
   ]);

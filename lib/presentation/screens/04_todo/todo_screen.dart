@@ -4,6 +4,7 @@ import 'package:riverpod_app/config/config.dart';
 import 'package:riverpod_app/presentation/providers/providers.dart';
 
 class TodoScreen extends ConsumerWidget {
+  static const routeName = '/todo';
   const TodoScreen({super.key});
 
   @override

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_app/config/config.dart';
 
 class RouterScreen extends ConsumerWidget {
+  static const routeName = '/provider-router';
   const RouterScreen({super.key});
 
   @override

@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../providers/providers.dart';
 
 class ProviderScreen extends ConsumerWidget {
+  static const routeName = '/provider';
   const ProviderScreen({super.key});
 
   @override

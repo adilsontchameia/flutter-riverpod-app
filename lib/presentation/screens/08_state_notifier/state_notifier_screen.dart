@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-
 class StateNotifierScreen extends StatelessWidget {
+  static const routeName = '/state-notifier-provider';
   const StateNotifierScreen({super.key});
 
   @override
