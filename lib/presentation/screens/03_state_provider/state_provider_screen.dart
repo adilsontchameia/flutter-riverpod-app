@@ -10,7 +10,7 @@ class StateProviderScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final darkMode = ref.watch(darkModeProvider);
     final counter = ref.watch(counterProvider);
-    final randomName = ref.watch(userNameProvider);
+    final randomName = ref.watch(usernameProvider);
 
     return Scaffold(
       appBar: AppBar(
@@ -28,13 +28,13 @@ class StateProviderScreen extends ConsumerWidget {
               size: 100,
             ),
             onPressed: () =>
-                ref.read(darkModeProvider.notifier).toggleDarMode(),
+                ref.read(darkModeProvider.notifier).toggleDarkMode(),
           ),
           Text(randomName, style: const TextStyle(fontSize: 25)),
           TextButton.icon(
             icon: const Icon(Icons.add, size: 50),
             label: Text('$counter', style: const TextStyle(fontSize: 100)),
-            onPressed: () => ref.read(counterProvider.notifier).increaseBy(),
+            onPressed: () => ref.read(counterProvider.notifier).increaseByOne(),
           ),
           const Spacer(flex: 2),
         ],
@@ -43,7 +43,7 @@ class StateProviderScreen extends ConsumerWidget {
         label: const Text('Random name'),
         icon: const Icon(Icons.refresh_rounded),
         onPressed: () => ref
-            .read(userNameProvider.notifier)
+            .read(usernameProvider.notifier)
             .changeName(RandomGenerator.getRandomName()),
       ),
     );

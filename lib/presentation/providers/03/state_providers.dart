@@ -2,12 +2,12 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'state_providers.g.dart';
 
-@riverpod
+@Riverpod(keepAlive: true)
 class Counter extends _$Counter {
   @override
   int build() => 5;
 
-  void increaseBy() => state++;
+  void increaseByOne() => state++;
 }
 
 @riverpod
@@ -15,21 +15,13 @@ class DarkMode extends _$DarkMode {
   @override
   bool build() => false;
 
-  bool toggleDarMode() => state = !state;
+  void toggleDarkMode() => state = !state;
 }
 
-@riverpod
-class UserName extends _$UserName {
+@Riverpod(keepAlive: true)
+class Username extends _$Username {
   @override
-  String build() => 'Adilson Tchameia';
+  String build() => "Adilson";
 
   void changeName(String name) => state = name;
 }
-
-// @riverpod
-// class RandoNumber extends _$RandoNumber {
-//   @override
-//   int build() => ref.watch(counterProvider);
-
-//   void randoNumber() => state = Random().nextInt(100);
-// }
