@@ -25,12 +25,14 @@ class FutureProviderScreen extends ConsumerWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           FloatingActionButton(
+            heroTag: 'btn-1',
             child: const Icon(Icons.minimize),
             onPressed: () =>
                 ref.read(pokemonIdProvider.notifier).previousPokemon(),
           ),
           const SizedBox(height: 10.0),
           FloatingActionButton(
+            heroTag: 'btn-2',
             child: const Icon(Icons.add),
             onPressed: () => ref.read(pokemonIdProvider.notifier).nextPokemon(),
           ),
